@@ -24,7 +24,8 @@ const UrlInputForm = () => {
     setLoading(true);
 
     try {
-      const res = await axios.post('http://localhost:8081/api/shorten', {
+      const res = await axios.post('https://glad-sibeal-khasim-c57c075f.koyeb.app/api/shorten', {
+        //http://localhost:8081/api/shorten
         originalUrl: url,
       });
       setShortUrl(res.data);
